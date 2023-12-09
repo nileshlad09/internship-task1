@@ -1,5 +1,5 @@
 import React from 'react'
-import { data } from '../Data/userdata'
+import { data } from '../../Data/userdata'
 import Graph from '../Graph/Graph';
 import Graph2 from '../Graph/Graph2';
 import Sidebar from '../Sidebar/Sidebar';

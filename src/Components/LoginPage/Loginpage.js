@@ -1,9 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { useNavigate } from "react-router-dom";
+import usersContext from '../../Context/usercontext/usersContext';
 import './loginpage.css'
 
 const Loginpage = () => {
     const navigate = useNavigate();
+
+    const context = useContext(usersContext);
+    const { addUserData } = context;
 
     const [crediantial, setCrediantial] = useState({ email: "", password: "" });
     const [passVis, setPassVis] = useState(false);
@@ -24,6 +28,7 @@ const Loginpage = () => {
         } 
         else {
             setWarning("");
+            addUserData(crediantial);
             navigate('/dashboard');
         }
     }

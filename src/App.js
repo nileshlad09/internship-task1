@@ -2,6 +2,7 @@ import './App.css';
 import Dashboard from './Components/Dashboard/Dashboard';
 import Loginpage from './Components/LoginPage/Loginpage';
 import Navbar from './Components/Navbar/Navbar';
+import UserState from './Context/usercontext/UserState';
 import {
   BrowserRouter as Router,
   Routes,
@@ -11,6 +12,7 @@ import {
 function App() {
   return (
     <>
+    <UserState>
     <Router>
         <Navbar/>
         <Routes>
@@ -18,6 +20,7 @@ function App() {
           <Route path="/dashboard"   element={<Dashboard/> } />
         </Routes>
       </Router>
+      </UserState>
     </>
   );
 }

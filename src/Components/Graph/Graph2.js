@@ -52,8 +52,8 @@ const Graph2 = (props) => {
                         <p>TOTAL USERS = {data?.length}</p>
                     </div>
                     {
-                        gender.map((g) => {
-                            return <div className='details'>
+                        gender.map((g,id) => {
+                            return <div className='details' key={id}>
                                 <p>{g.employment} = {g.occurrence}</p>
                             </div>
                         })
