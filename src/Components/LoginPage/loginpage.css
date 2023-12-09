@@ -1,0 +1,48 @@
+.loginContainer{
+    background-color: rgb(147, 147, 148);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loginpage{
+    border-radius: 5px;
+    background-color: white;
+    width: 500px;
+    box-shadow: 0 0 10px black;
+}
+.loginpage form{
+    padding: 30px;
+}
+.login-heading{
+    padding-bottom: 10px;
+    font-size: 30px;
+}
+.inputbox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+    margin-top: 10px;
+    width: 100%;
+    border-bottom: 1px solid gray;
+}
+.inputbox input{
+    height: 30px;
+    outline: none;
+    border: none;
+    font-size: 16px;
+}
+.loginpage button{
+    width: 100px;
+    height: 35px;
+    margin-top: 20px;
+    background-color:#2F6CE5;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.warning-msg{
+    color: red;
+}

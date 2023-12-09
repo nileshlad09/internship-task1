@@ -1,0 +1,24 @@
+.navbarSection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    background-color: black;
+    height: 60px;
+    color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+.login-logout{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.login-logout button{
+    width: 65px;
+    height: 30px;
+    background-color:#2F6CE5;
+    border: none;
+    color: white;
+}
